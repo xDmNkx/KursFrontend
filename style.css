@@ -1,7 +1,23 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body
 {
     background-color: blanchedalmond;
-    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+h1, header
+{
+    text-align: center;
+    font-weight: bold;
+}
+nav 
+{
+    position: sticky;
+    top: 0;
 }
 nav ul
 {
@@ -34,4 +50,19 @@ nav ul li:hover{
     border-color: rgb(20, 90, 97);
     background-color:rgb(110, 84, 36);
     transition: none;
+  }
+  .ciasteczka
+  {
+      border: 1px solid rgb(30, 122, 92);
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: aquamarine;
+      display: flex;
+      justify-content: space-around;
+
+  }
+  .ciasteczka p
+  {
+      font-weight: bold;
   }
