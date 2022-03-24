@@ -6,8 +6,13 @@
 }
 body
 {
-    background-color: blanchedalmond;
+    background-color: rgb(202, 156, 87);
     font-family: 'Poppins', sans-serif;
+}
+img
+{
+    width: 200px;
+    height: 200px;
 }
 h1, header
 {
@@ -26,20 +31,19 @@ nav ul
     margin: 0px;
     padding: 0px;
     list-style-type: none;
-    border: 5px dashed rgb(160, 79, 79);
     justify-content: space-evenly;
 }
 nav ul li
 {
     margin:10px;
     border:2px solid rgb(192, 134, 58);
-    padding:5px 15px;
-    background-color: rgb(99, 55, 24);
+    padding:5px 50px;
+    background-color: rgb(133, 73, 31);
     color:#fff;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor:pointer;
     transition: .3s;
-
+    font-weight: bold;
 }
 nav ul li:hover{
     border-color: rgb(48, 214, 229);
@@ -60,7 +64,8 @@ nav ul li:hover{
       background-color: aquamarine;
       display: flex;
       justify-content: space-around;
-    padding: 20px;
+      padding: 20px;
+      opacity: 0.8;
   }
   .ciasteczka p
   {
