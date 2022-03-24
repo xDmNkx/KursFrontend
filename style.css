@@ -60,7 +60,7 @@ nav ul li:hover{
       background-color: aquamarine;
       display: flex;
       justify-content: space-around;
-
+    padding: 20px;
   }
   .ciasteczka p
   {
