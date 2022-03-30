@@ -68,7 +68,7 @@ nav ul li
 }
 nav ul li:hover
 {
-    border-color: rgb(48, 214, 229);
+    border-color: rgb(48, 75, 229);
     background-color:rgb(190, 134, 30);
     color:rgb(211, 7, 7);
 }
@@ -97,12 +97,6 @@ nav ul li:hover
   main
   {
       padding: 2em;
-  }
-  main > header
-  {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .imgfield
   {
