@@ -1,33 +1,53 @@
 *
 {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
 }
 body
 {
+    scroll-behavior: smooth;
+    margin: 0;
     background-color: rgb(202, 156, 87);
-    font-family: 'Poppins', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+body > header
+{
+    background-color: rgba(202, 156, 87);
+    border: 15px solid rgb(202, 156, 87);
+    text-align: center;
 }
 img
 {
-    width: 200px;
-    height: 200px;
+    max-width: 100%;
+    border-radius: 8px;
 }
-h1, header
+h1
+{
+    font-weight: bold;
+    text-align: center;
+}
+#naglowek1
 {
     text-align: center;
-    font-weight: bold;
 }
 nav 
 {
     position: sticky;
     top: 0;
 }
+nav ul a
+{
+    text-decoration: none;
+    color: inherit;
+}
 nav ul
 {
     background-color: rgb(250, 186, 91);
     display: flex;
+    border-top: none;
     margin: 0px;
     padding: 0px;
     list-style-type: none;
@@ -46,16 +66,18 @@ nav ul li
     transition: .3s;
     font-weight: bold;
 }
-nav ul li:hover{
+nav ul li:hover
+{
     border-color: rgb(48, 214, 229);
     background-color:rgb(190, 134, 30);
     color:rgb(211, 7, 7);
-  }
-  nav ul li:active{
+}
+  nav ul li:active
+{
     border-color: rgb(20, 90, 97);
     background-color:rgb(110, 84, 36);
     transition: none;
-  }
+}
   .ciasteczka
   {
       border: 1px solid rgb(30, 122, 92);
@@ -72,3 +94,81 @@ nav ul li:hover{
   {
       font-weight: bold;
   }
+  main
+  {
+      padding: 2em;
+  }
+  main > header
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imgfield
+  {
+      text-align: center;
+  }
+  @media (min-width:768px){
+    main > header,
+    main > article,
+    #kontakt 
+    {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+    main > header > *,
+    main > article > *,
+    #kontakt > *
+    {
+        flex: 1;
+    }
+}
+  .headertekst
+  {
+      padding: 0em 2em 1em 2em;
+  }
+.tableField
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+#kontakt
+{
+    padding: 0 2em;
+}
+#kontakt form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#kontakt form input,
+#kontakt form textarea
+{
+    width: 80%;
+    padding: .5rem;
+    outline: 0ch;
+    margin-bottom: .3rem;
+    border-radius: 5px;
+    font-family: inherit;
+}
+#kontakt form button 
+{
+    padding: .2rem 1rem;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+footer
+{
+    padding: .3em 1.5em;
+    text-align: center;
+}
