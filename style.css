@@ -105,7 +105,8 @@ nav ul li:hover
   @media (min-width:768px){
     main > header,
     main > article,
-    #kontakt 
+    #kontakt,
+    #projekty 
     {
       display:flex;
       align-items: center;
@@ -113,7 +114,8 @@ nav ul li:hover
     }
     main > header > *,
     main > article > *,
-    #kontakt > *
+    #kontakt > *,
+    #projekty > *
     {
         flex: 1;
     }
@@ -165,4 +167,30 @@ footer
 {
     padding: .3em 1.5em;
     text-align: center;
+}
+.karuzela
+{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+}
+.citem
+{
+    border: 2px solid green;
+    flex: 1;
+    padding: 0 .5em;
+}
+.citem p
+{
+    display: none;
+}
+.active
+{
+    border: 4px dashed red;
+    flex: 3;
+    text-align: center;
+}
+.active p 
+{
+    display: block;
 }

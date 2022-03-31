@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona do kursu</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <!-- CZCIONKI -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +39,7 @@
                 </div>
             </header>
             <article>
-                <header>
+                <header class="headertekst">
                     <!-- TABELA -->
                    
                        <h2>Technologia:</h2>
@@ -86,9 +86,28 @@
             </article>
             <!-- Projekty -->
             <section id="projekty">
-                <h2>Projekty:</h2>
-                <p>Fajne projekty ;)</p>
+                <header class="headertekst">
+                    <h2>Projekty:</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </header>
+                <div class="karuzela">
+                    <div class="citem">
+                        <h3>Projekt 1</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="citem active">
+                        <h3>Projekt 2</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+    
+                    </div>
+                    <div class="citem">
+                        <h3>Projekt 3</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+    
+                    </div>
+                </div>
             </section>
+            
         
         </main>
         <!-- Kontakt -->

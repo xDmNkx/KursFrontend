@@ -1,16 +1,17 @@
-//STAŁA (NIE MOŻNA JEJ NADPISAĆ)
-const
-//ZMIENNA (MOŻE SIĘ ZMIENIAĆ)
-let
-//STRING (CIAG ZNAKOW) - ZAWSZE W CUDYSŁOWIU
-const string = "przykład"
-//OBJEKTY
-const project = {
-    name : "Projekt 1",
-    data : "30.03.2022"
-}
-//console.log("Projekt o nazwie" + project.name
-//+ "został stworzony" + project.date)
-console.log(console)
+// PROJEKTY
 
-
+// stała allCItems, przechowująca tablicę ("[el1,el2]") wszyskich klas .cItem w #projects
+const allcitem = document.querySelectorAll("#projekty .citem");
+// wyciągamy każdy .cItem osobno
+console.log(allcitem)
+allcitem.forEach( citem => {
+    // każdemu po kliknięciu dodajemy funkcję strzałkową
+  citem.onclick = () => {
+    // usuń klasę .active ze wszystkich elemenyów
+    allcitem.forEach( citem2 => {
+      citem2.classList.remove("active")
+     })
+     // do klikniętego elementu dopisz klasę ".active"
+     citem.classList.add("active")
+    }
+})
