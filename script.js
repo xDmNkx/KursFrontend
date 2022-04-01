@@ -15,3 +15,9 @@ allcitem.forEach( citem => {
      citem.classList.add("active")
     }
 })
+// COOKIES
+document.querySelector(".ciasteczka button")
+.oneclick = e =>{
+// console.log(e.target.parentElement.remove)
+e.target.parentElement.remove();
+}
